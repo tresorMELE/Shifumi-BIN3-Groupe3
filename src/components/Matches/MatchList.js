@@ -9,13 +9,20 @@ function MatchList() {
       },
     })
       .then((res) => res.json())
-      .then((data) => setMatchs(data));
+      .then((data) => setMatchs(data));  
   }, []);
   
+function rejoindrePartie(){
+  <button onclick="rejoindrePartie()">Rejoindre</button>
+}
+
   return (
     <ul>
       {matchs === undefined && <span>Loading...</span>}
-      {matchs?.length === 0 && <span>No data</span>}
+      {matchs?.length === 0 && <span>No data</span>}{"\n"}
+      <button onClick={rejoindrePartie}>
+        Rejoindre une partie
+      </button>
       {matchs?.map((match) => (
         <li>{match._id}</li>
       ))}
