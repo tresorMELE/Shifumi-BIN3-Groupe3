@@ -9,6 +9,7 @@ import UserList from "./components/UserManager/UserList";
 import { Link, Route, Routes } from "react-router-dom";
 import Login from "./components/Security/Login";
 import MatchList from "./components/Matches/MatchList";
+import Logout from "./components/Security/Logout";
 
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/login">Login</Link></li>
             <li><Link to="/matchs">Matchs</Link></li>
-            <li><Link to="/collapse">Collpase</Link></li>
             <li><Link to="/user-management">User</Link></li>
+            <li><Link to="/Logout">Logout</Link></li>
           </ul>
         </nav>
         <h1>Bienvenue !</h1>
@@ -31,8 +32,8 @@ function App() {
       <header className="App-header">
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
           <Route path="/matchs" element={<MatchList />} />
-          <Route path="/collapse" element={<Collapse />} />
           <Route path="/user-management" element={<UserList />} />
           <Route path="/" element={<Home />} />
         </Routes>
