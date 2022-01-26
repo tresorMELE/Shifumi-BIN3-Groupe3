@@ -9,7 +9,6 @@ import UserList from "./components/UserManager/UserList";
 import { Link, Route, Routes } from "react-router-dom";
 import Login from "./components/Security/Login";
 import MatchList from "./components/Matches/MatchList";
-import { PaddingRounded } from "@mui/icons-material";
 
 
 function App() {
