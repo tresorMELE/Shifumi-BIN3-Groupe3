@@ -40,16 +40,12 @@ function Login() {
         localStorage.setItem("token", data.token);
         setUser(data.token);
         console.log(jwtDecode(data.token));
+        window.location.href="http://fauques.freeboxos.fr:3000/matchs";
       });
   }
   
   return user ? (
-    //<span>Already Logged</span>
-    fetch("http://fauques.freeboxos.fr:3000/matchs"), {
-      //method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },}
+    <span>Already Logged</span>
     //<div><button onClick={handleClick} type="button" /></div>
    ) : (
 
