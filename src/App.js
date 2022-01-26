@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import "./App.css";
 import Button from "./components/lib/Button";
 import Table from "./components/lib/Table";
@@ -9,21 +9,27 @@ import UserList from "./components/UserManager/UserList";
 import { Link, Route, Routes } from "react-router-dom";
 import Login from "./components/Security/Login";
 import MatchList from "./components/Matches/MatchList";
+import { PaddingRounded } from "@mui/icons-material";
+
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <Link to="/">
-          <img src={logo} className="App-logo" alt="logo" />
-        </Link>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/matchs">Matchs</Link>
-          <Link to="/collapse">Collpase</Link>
-          <Link to="/user-management">User</Link>
+          <ul className="menu">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/matchs">Matchs</Link></li>
+            <li><Link to="/collapse">Collpase</Link></li>
+            <li><Link to="/user-management">User</Link></li>
+          </ul>
         </nav>
+        <h1>Bienvenue !</h1>
+      {/* <Link to="/">
+          <img src={logo} className="App-logo" />
+        </Link> */}
+      <header className="App-header">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/matchs" element={<MatchList />} />
@@ -55,45 +61,19 @@ function Home() {
         onClick={function handleClick() {
           alert("5");
         }}
-        title="Button 1"
-        style={{ color: "red", backgroundColor: "blue" }}
       />
-      <Button
-        img={logo}
-        variant="rounded"
-        title="Button 2"
-        onClick={function handleClick() {
-          alert("6");
-        }}
-        style={{ color: "red", backgroundColor: "yellow" }}
-      />
-      <Button
-        variant="round"
-        img={logo}
-        style={{ color: "red", backgroundColor: "green" }}
-        onClick={function handleClick() {
-          alert("7");
-        }}
-      />
-      <Button
-        variant="squared"
-        title="Button 4"
-        style={{}}
-        onClick={function handleClick() {
-          alert("8");
-        }}
-      />
+
       <Table nbLine={5} nbColumn={5} cellStyle={{ color: "red" }} />
       <Table
         nbLine={5}
         nbColumn={5}
         cellStyle={{ color: "green" }}
-        CellComponent={<span>Test</span>}
+        CellComponent={<span>name</span>}
       />
       <TodoList data={data} setData={setData} />
       <TodoList data={data} setData={setData} disableAdd={true} />
       <p>
-        Edit <code>src/App.js</code> and save to reload.
+      All rigth reserved
       </p>
       <a
         className="App-link"

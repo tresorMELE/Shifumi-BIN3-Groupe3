@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 function Collapse() {
   let [opened, setOpened] = useState(false);
 
