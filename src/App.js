@@ -62,7 +62,7 @@ function Home() {
         }}
       />
 
-      <Table nbLine={5} nbColumn={5} cellStyle={{ color: "red" }} />
+      <Table nbLine={5} nbColumn={5} cellStyle={{ color: "red", border:"1px solid black"}} />
       <Table
         nbLine={5}
         nbColumn={5}
@@ -72,7 +72,7 @@ function Home() {
       <TodoList data={data} setData={setData} />
       <TodoList data={data} setData={setData} disableAdd={true} />
       <p>
-      All rigth reserved
+      All rigth reserved @
       </p>
       <a
         className="App-link"
