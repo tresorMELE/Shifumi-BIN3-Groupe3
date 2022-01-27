@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+//import Game from "./components/Matches/Game";
 
 function MatchList() {
   const [matchs, setMatchs] = useState();
@@ -13,7 +14,8 @@ function MatchList() {
   }, []);
   
 function rejoindrePartie(){
-  <button onclick="rejoindrePartie()">Rejoindre</button>
+  <button onclick="rejoindre()">Rejoindre</button>
+  window.location.href = './Game';
 }
 
   return (

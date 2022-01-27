@@ -10,7 +10,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import Login from "./components/Security/Login";
 import MatchList from "./components/Matches/MatchList";
 import Logout from "./components/Security/Logout";
-
+import Game from "./components/Matches/Game";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <ul className="menu">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/login">Login</Link></li>
+            <li><Link to="/Game">Game</Link></li>
             <li><Link to="/matchs">Matchs</Link></li>
             <li><Link to="/user-management">User</Link></li>
             <li><Link to="/Logout">Logout</Link></li>
@@ -36,6 +37,7 @@ function App() {
           <Route path="/matchs" element={<MatchList />} />
           <Route path="/user-management" element={<UserList />} />
           <Route path="/" element={<Home />} />
+          <Route path="/" element={<Game />} />
         </Routes>
       </header>
     </div>
