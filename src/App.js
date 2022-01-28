@@ -2,7 +2,6 @@ import logo from "./logo.png";
 import "./App.css";
 import Button from "./components/lib/Button";
 import Table from "./components/lib/Table";
-import Collapse from "./components/lib/Collapse";
 import TodoList from "./components/TodoList/TodoList";
 import { useState } from "react";
 import UserList from "./components/UserManager/UserList";
@@ -11,6 +10,11 @@ import Login from "./components/Security/Login";
 import MatchList from "./components/Matches/MatchList";
 import Logout from "./components/Security/Logout";
 import Game from "./components/Matches/Game";
+import 'spectre.css';
+//import './Game.css';
+import Play from './components/Matches/Play';
+import Display from './components/Matches/Display';
+import Result from './components/Matches/Result';
 
 function App() {
   return (
@@ -21,7 +25,7 @@ function App() {
           <ul className="menu">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/login">Login</Link></li>
-            {/* <li><Link to="/Game">Game</Link></li> */}
+            <li><Link to="/Game">Game</Link></li>
             <li><Link to="/matchs">Matchs</Link></li>
             <li><Link to="/user-management">User</Link></li>
             {/* <li><Link to="/Logout">Logout</Link></li> */}
@@ -37,9 +41,10 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/matchs" element={<MatchList />} />
+          <Route path="/Game" element={<Game />} />
           <Route path="/user-management" element={<UserList />} />
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Game />} />
+
         </Routes>
       </header>
     </div>

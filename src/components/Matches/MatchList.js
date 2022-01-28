@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-//import Game from "./components/Matches/Game";
+//import Game from "./Game";
 
 function MatchList() {
   const [matchs, setMatchs] = useState();

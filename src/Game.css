@@ -1,0 +1,14 @@
+.computer {
+  opacity: 0.7;
+}
+
+.btn, .result {
+  height: 20vh;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.result {
+  justify-content: center;
+  align-items: center;
+}
