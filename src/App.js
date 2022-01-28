@@ -39,7 +39,7 @@ function App() {
           <Route path="/matchs" element={<MatchList />} />
           <Route path="/user-management" element={<UserList />} />
           <Route path="/" element={<Home />} />
-          <Route path="/game" element={<Game />} />
+          <Route path="/" element={<Game />} />
         </Routes>
       </header>
     </div>

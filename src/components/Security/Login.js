@@ -41,7 +41,7 @@ function Login() {
         setUser(data.token);
         console.log(jwtDecode(data.token));
         window.location.href="http://fauques.freeboxos.fr:3000/matchs";
-        // window.location.href = './';
+        window.location.href = './';
       });
   }
 
@@ -54,7 +54,7 @@ function Login() {
   return user ? (
     <span>Already Logged....
       <ul>
-      <button onClick={Logout}>
+      <button onClick={Logout} variant="contained">
         Deconnexion
       </button>
       </ul>
