@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'spectre.css';
-//import './Game.css';
+import './Game.css';
 import Play from './Play';
 import Display from './Display';
 import Result from './Result';

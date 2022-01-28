@@ -26,6 +26,7 @@ function Login() {
   //}
 
   function handleSubmit(e) {
+  
     e.preventDefault();
     fetch("http://fauques.freeboxos.fr:3000/login", {
       method: "POST",
@@ -44,12 +45,14 @@ function Login() {
   }
 
   function Logout(){
+    
     localStorage.clear();
-    <button onclick="deconnexion()">DECONNEXION</button>
-    window.location.href = './login';
+    <button onclick="deconnexion()">Logout</button>
+    window.location.href = '/';
   }
   
   return user ? (
+    
     <span>Already Logged....
       <ul>
       <button onClick={Logout} variant="contained">
@@ -73,6 +76,7 @@ function Login() {
       />
       <input type="submit" value="Login" />
     </form>
+    
   );
 
 }

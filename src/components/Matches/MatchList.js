@@ -14,7 +14,7 @@ function MatchList() {
   }, []);
   
 function rejoindrePartie(){
-  <button onclick="rejoindre()">Rejoindre</button>
+  <button onclick="rejoindre()">Rejoindre Une partie</button>
   window.location.href = './Game';
 }
 

@@ -1,4 +1,3 @@
-import logo from "./logo.png";
 import "./App.css";
 import Button from "./components/lib/Button";
 import Table from "./components/lib/Table";
@@ -11,40 +10,29 @@ import MatchList from "./components/Matches/MatchList";
 import Logout from "./components/Security/Logout";
 import Game from "./components/Matches/Game";
 import 'spectre.css';
-//import './Game.css';
-import Play from './components/Matches/Play';
-import Display from './components/Matches/Display';
-import Result from './components/Matches/Result';
 
 function App() {
   return (
-    
-
     <div className="App">
         <nav>
           <ul className="menu">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/Game">Game</Link></li>
-            <li><Link to="/matchs">Matchs</Link></li>
-            <li><Link to="/user-management">User</Link></li>
-            {/* <li><Link to="/Logout">Logout</Link></li> */}
+            <li><h3><Link to="/">Home</Link></h3></li>
+            {/* <li><Link to="/login">Login</Link></li> */}
+            <li><h3><Link to="/matchs">Matchs</Link></h3></li>
+            <li><h3><Link to="/user-management">User</Link></h3></li>
             
           </ul>
         </nav>
-        <h1>Bienvenue !</h1>
-      {/* <Link to="/">
-          <img src={logo} className="App-logo" />
-        </Link> */}
+        {/* <h5>Le meileur score est celui de :) </h5> */}
+      
       <header className="App-header">
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/matchs" element={<MatchList />} />
           <Route path="/Game" element={<Game />} />
           <Route path="/user-management" element={<UserList />} />
-          <Route path="/" element={<Home />} />
-
+          {/* <Route path="/" element={<Home />} /> */}
         </Routes>
       </header>
     </div>

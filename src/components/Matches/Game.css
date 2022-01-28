@@ -1,9 +1,9 @@
 .computer {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .btn, .result {
-  height: 20vh;
+  height: 10vh;
   font-size: 2em;
   margin-bottom: 1em;
 }
