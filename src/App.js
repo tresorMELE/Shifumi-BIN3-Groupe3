@@ -14,16 +14,18 @@ import Game from "./components/Matches/Game";
 
 function App() {
   return (
+    
 
     <div className="App">
         <nav>
           <ul className="menu">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/login">Login</Link></li>
-            <li><Link to="/Game">Game</Link></li>
+            {/* <li><Link to="/Game">Game</Link></li> */}
             <li><Link to="/matchs">Matchs</Link></li>
             <li><Link to="/user-management">User</Link></li>
-            <li><Link to="/Logout">Logout</Link></li>
+            {/* <li><Link to="/Logout">Logout</Link></li> */}
+            
           </ul>
         </nav>
         <h1>Bienvenue !</h1>
@@ -37,12 +39,14 @@ function App() {
           <Route path="/matchs" element={<MatchList />} />
           <Route path="/user-management" element={<UserList />} />
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Game />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </header>
     </div>
   );
 }
+
+
 
 function Home() {
   const [data, setData] = useState([

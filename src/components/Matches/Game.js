@@ -1,5 +1,32 @@
 import React from 'react'
 
+
+// const pierrebtn = document.getElementById('pierre');
+// const feuillebtn = document.getElementById('feuille');
+// const ciseauxbtn = document.getElementById('ciseaux');
+// const affichage = document.getElementById('resultat');
+
+// let joueur = null;
+// let robot = null;
+// let resultat = null;
+
+// const robotChoix =['pierre', 'feuille', 'ciseaux'];
+
+// function combat(j, o){
+//   if(j==='pierre'&& o=== 'ciseaux'){
+//     resultat = 'Gagné';
+//     console.log(robot);
+//     affichage.innerHTML = `${joueur}VS ${robot} : ${resultat}`;
+//   }
+// }
+
+// pierrebtn.addEventListener('click',function(){
+//   joueur = 'pierre',
+//   chiffre = Math.floor(Math.random() =3);
+//   robot = robotChoix[chiffre];
+//   combat(joueur, robot);
+// })
+
 const buttons = document.querySelectorAll("button");
 // const resultat = document.querySelector(".resultat");
 
