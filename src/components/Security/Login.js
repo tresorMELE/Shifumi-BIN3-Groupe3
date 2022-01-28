@@ -41,7 +41,6 @@ function Login() {
         setUser(data.token);
         console.log(jwtDecode(data.token));
         window.location.href="http://fauques.freeboxos.fr:3000/matchs";
-        window.location.href = './';
       });
   }
 
