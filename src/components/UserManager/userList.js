@@ -55,13 +55,6 @@ function UserList() {
       });
   }
 
-  //useEffect(() => {
-  //    //AfterUpdate
-  //    return () => {
-  //        //BeforeUpdate after first print
-  //    }
-  //}, [users])
-
   useEffect(() => {
     fetch("http://localhost:3001/users")
       .then((response) => response.json())
@@ -74,18 +67,7 @@ function UserList() {
         users.filter((user) => !filters || user.name.startsWith(filters))
       );
   }, [filters, users]);
-
-  // Ou en 1 useEffect
-  //useEffect(() => {
-  //  if (users)
-  //    setDisplayUsers(
-  //      users.filter((user) => !filters || user.name.startsWith(filters))
-  //    );
-  //  else
-  //    fetch("http://localhost:3001/users")
-  //      .then((response) => response.json())
-  //      .then((data) => setUsers(data));
-  //}, [filters, users]);
+  
 
   return (
     <>

@@ -7,23 +7,10 @@ import React from 'react'
 function Login() {
   const [values, setValues] = useState({ username: "", password: "" });
   const [user, setUser] = useState(localStorage.getItem("token"));
-  //const [handleClick] = useNavigate("http://fauques.freeboxos.fr:3000/matchs");
-  /*const YourComponent = () => {
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate("http://fauques.freeboxos.fr:3000/matchs");
-    }*/
 
   function handleChange(e) {
     setValues({ ...values, [e.target.name]: e.target.value });
   }
-  // VanillaJS approach (Closure)
-  //function handleChange(name) {
-  //  return function (e) {
-  //    setValues({ ...values, [name]: e.target.value });
-  //  };
-  //}
 
   function handleSubmit(e) {
   
@@ -56,13 +43,11 @@ function Login() {
     <span>Already Logged....
       <ul>
       <button onClick={Logout} variant="contained">
-        Deconnexion
+        Déconnexion
       </button>
       </ul>
     </span>
     
-    
-    //<div><button onClick={handleClick} type="button" /></div>
    ) : (
 
     
